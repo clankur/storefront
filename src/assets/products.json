@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Honda Civic",
+    "image": "https://c4d709dd302a2586107d-f8305d22c3db1fdd6f8607b49e47a10c.ssl.cf1.rackcdn.com/thumbnails/stock-images/c041be9aaa72a7f4d030a16b1b61d7ff.png",
+    "price": 12000,
+    "condition": "Used",
+    "milage": 4000
+  },
+  {
+    "name": "Mercedes Benz",
+    "image": "https://c4d709dd302a2586107d-f8305d22c3db1fdd6f8607b49e47a10c.ssl.cf1.rackcdn.com/thumbnails/stock-images/68b434356333685e8a4ffef053a28b12.png",
+    "price": 60000,
+    "condition": "Used",
+    "milage": 500
+  },
+  {
+    "name": "Tesla Model 3",
+    "image": "https://www.tesla.com/content/dam/tesla-site/sx-redesign/img/model3-proto/specs/compare-model3--center.png",
+    "price": 40000,
+    "condition": "Used",
+    "milage": 1200
+  }
+]
