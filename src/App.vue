@@ -19,13 +19,11 @@
 
 <script>
 import json from './assets/products.json'
-import HelloWorld from './components/HelloWorld'
 import ProductGrid from './components/ProductGrid'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     ProductGrid,
   },
   data() {
