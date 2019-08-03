@@ -6,30 +6,36 @@
         <span class="font-weight-light">Shop</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn flat href="#" target="_blank">
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
+      <Modal :modalData="modalContent"></Modal>
     </v-toolbar>
-
     <v-content>
-      <ProductGrid :products="json"></ProductGrid>
+      <AutoFillSearch :productsData="productsData"></AutoFillSearch>
+      <ProductGrid :products="productsData"></ProductGrid>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import json from './assets/products.json'
-import ProductGrid from './components/ProductGrid'
+import productsData from "./assets/products.json";
+import modalContent from "./assets/modalContent.json";
+import AutoFillSearch from "./components/AutoFillSearch";
+import ProductGrid from "./components/ProductGrid";
+import Modal from "./components/Modal";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     ProductGrid,
+    Modal,
+    AutoFillSearch
   },
   data() {
+    console.log(Object.keys(productsData));
     return {
-      json,
-    }
+      productsData: productsData,
+      modalContent: modalContent,
+    };
   },
-}
+  getProductNames() {}
+};
 </script>
